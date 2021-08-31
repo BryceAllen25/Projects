@@ -1,0 +1,41 @@
+public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		double num1;
+		double num2;
+		double total = 0;
+		String answer;
+	
+		System.out.println("Jesse are you ready to cook some math? (y/n):");
+		answer = input.next();
+		
+		if(answer.equals("y")) {
+		System.out.println("Alright lets get to work!");
+		
+		System.out.println("What number do you want to use first?");
+		num1 = input.nextDouble();
+		
+		System.out.println("What other number do you want to use?");
+		num2 = input.nextDouble();
+		
+		System.out.println("Which strain do you want to cook? (a, s, m, q)");
+		answer = input.next(); 
+		
+			if(answer.equals("a"))
+				total = total + num1 + num2; 
+		
+			if(answer.equals("s"))
+				total = total + num1 - num2; 
+		
+			if(answer.equals("m"))
+				total = total + num1 * num2; 
+		
+			if(answer.equals("q"))
+				total = total + num1 / num2; 
+		
+		System.out.print("Heres the finished batch Jesse! Very nice job! :");
+		System.out.println(total); }
+		
+		if(answer.equals("n")) {
+			System.out.println("Alright let me know when."); }
